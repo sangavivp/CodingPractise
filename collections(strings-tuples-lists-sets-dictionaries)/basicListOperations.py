@@ -31,6 +31,46 @@ print("List comprehension")
 [print(x) if x != 'try' else "nothing" for x in list1 ] # handling if-else with list comprehension
 
 ### https://www.w3schools.com/python/python_lists_sort.asp for 13 Oct
+print("Sorting\n\n")
+
+# list1.sort() # Works only on Homogenous types
+list3 = ['try', 'many','things', 'for', 'NOw', 'Later', 'SOON']
+print(list3)
+list3.reverse()
+print(list3)
+list_num = [9, 6, 4, 5, 0]
+
+def closeness_fun(num):
+    return abs(num-0)
+
+list_num.sort(key=closeness_fun)
+
+print(list_num)
+
+list3.sort(key = str.lower)
+print(list3)
+
+list3.sort(reverse=True)
+print(list3)
+
+
+## Copying List
+list5 = list3 # Reference is copied
+print(id(list5))
+print(id(list3))
+
+
+list6 = list3.copy() # independent copies
+print(id(list6))
+print(id(list3))
+list3[3] = 'hello'
+print(list6)
+print(list3)
+
+list7 = list(list3) # independent copies
+print(id(list7))
+print(id(list3))
+
 
 # removing
 print("\n\nremoving and popping")
