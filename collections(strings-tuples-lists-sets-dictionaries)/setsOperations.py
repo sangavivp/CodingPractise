@@ -15,7 +15,7 @@ for x in myset:
 #     print(myset[i])
 
 
-myset.add('mango') # to add a element to the list
+myset.add('mango') # to add a element to the set
 
 myset.update(myset2)
 print(myset)
